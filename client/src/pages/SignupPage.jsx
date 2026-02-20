@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Mail, Lock, Eye, EyeOff, Building2, Globe } from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, Building2, Globe, Link } from "lucide-react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { NavLink } from "react-router-dom";
 
 export default function SignupPage() {
 
@@ -192,9 +193,9 @@ export default function SignupPage() {
           {/* LOGIN */}
           <p className="text-sm text-center text-gray-500 mt-6">
             Already have an account?{" "}
-            <a href="/login" className="text-blue-600 font-medium hover:underline">
+            <NavLink to="/login" className="text-blue-600 font-medium hover:underline">
               Login
-            </a>
+            </NavLink>
           </p>
 
         </motion.div>
